@@ -24,6 +24,7 @@ project "ImGui"
 	filter "system:windows"
 		systemversion "latest"
 		cppdialect "C++17"
+		defines "IMGUI_API=__declspec(dllexport)" --Eable clients to use it
 
 	filter "system:linux"
 		pic "On"
