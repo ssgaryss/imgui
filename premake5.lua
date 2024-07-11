@@ -23,14 +23,14 @@ project "ImGui"
 
 	filter "system:windows"
 		systemversion "latest"
-		cppdialect "C++17"
+		cppdialect "C++20"
 		defines "_CRT_SECURE_NO_WARNINGS"
 		-- defines "IMGUI_API=__declspec(dllexport)" --Eable clients to use DLL
 
 	filter "system:linux"
 		pic "On"
 		systemversion "latest"
-		cppdialect "C++17"
+		cppdialect "C++20"
 
 	filter "configurations:Debug"
 		runtime "Debug"
